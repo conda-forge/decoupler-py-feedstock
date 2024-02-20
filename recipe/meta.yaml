@@ -31,6 +31,10 @@ requirements:
     - adjustText
     - scanpy
     - seaborn
+    - pandas
+    - scipy
+    - numpy
+    - typing_extensions
 
 test:
   imports:
