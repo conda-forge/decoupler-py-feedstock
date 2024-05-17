@@ -35,7 +35,7 @@ requirements:
     - scipy
     - numpy
     - typing_extensions
-    - python-igraph>=0.10.0
+    - python-igraph >=0.10.0
 
 test:
   imports:
