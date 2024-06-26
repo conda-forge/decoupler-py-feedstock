@@ -25,7 +25,7 @@ requirements:
     - tqdm
     - anndata
     - typing-extensions
-    - skranger
+    - poetry
     - scikit-learn
     - omnipath
     - adjustText
