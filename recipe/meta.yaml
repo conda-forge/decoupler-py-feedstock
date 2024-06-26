@@ -33,7 +33,7 @@ requirements:
     - seaborn
     - pandas
     - scipy
-    - numpy
+    - numpy <2.0.0
     - typing_extensions
     - python-igraph >=0.10.0
 
