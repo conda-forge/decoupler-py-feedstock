@@ -19,13 +19,13 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - poetry
   run:
     - python >=3.8
     - numba
     - tqdm
     - anndata
     - typing-extensions
-    - poetry
     - scikit-learn
     - omnipath
     - adjustText
@@ -44,6 +44,7 @@ test:
     - pip check
   requires:
     - pip
+    - poetry
 
 about:
   home: https://github.com/saezlab/decoupler-py
