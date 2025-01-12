@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/decoupler-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/decoupler-{{ version }}.tar.gz
   sha256: 4f6cda3fb2c807ff8681f1d15c3167e14f3a419378b4446c8ede3b60d40afb74
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numba
     - tqdm
     - anndata
@@ -45,6 +45,7 @@ test:
   requires:
     - pip
     - poetry
+    - python {{ python_min }}
 
 about:
   home: https://github.com/saezlab/decoupler-py
