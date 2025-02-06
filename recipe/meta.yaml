@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install .[full] -vv
   number: 0
 
 requirements:
@@ -22,21 +22,6 @@ requirements:
     - poetry
   run:
     - python >={{ python_min }}
-    - numba
-    - tqdm
-    - anndata
-    - typing-extensions
-    - scikit-learn
-    - omnipath
-    - adjustText
-    - scanpy
-    - seaborn
-    - pandas
-    - scipy
-    - numpy <2.0.0
-    - typing_extensions
-    - python-igraph >=0.10.0
-
 test:
   imports:
     - decoupler
