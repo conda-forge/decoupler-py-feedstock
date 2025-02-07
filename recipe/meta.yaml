@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install 'decoupler[full]@git+https://github.com/saezlab/decoupler-py@{{ version }}' --force -vv
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
@@ -22,6 +22,15 @@ requirements:
     - poetry
   run:
     - python >={{ python_min }}
+    - scikit-learn
+    - igraph
+    - adjusttext >=1.1.1
+    - pydeseq2 <0.5.0
+    - marsilea >=0.4.5
+    - pybiomart
+    - scanpy
+    pip:
+        - liana >=1.5.0
 test:
   imports:
     - decoupler
