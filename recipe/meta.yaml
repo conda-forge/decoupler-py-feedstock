@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install ".[full]" -vv
+  script: {{ PYTHON }} -m pip install 'decoupler[full]@git+https://github.com/saezlab/decoupler-py@{{ version }}' -vv
   number: 0
 
 requirements:
