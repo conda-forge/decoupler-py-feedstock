@@ -24,6 +24,11 @@ requirements:
   run:
     - python >={{ python_min }}
     - scanpy
+    - docrep
+    - xgboost
+    - requests
+    - marsilea
+    - adjusttext
 
 test:
   imports:
