@@ -1,6 +1,6 @@
 {% set name = "decoupler" %}
 {% set conda_package_name = "decoupler-py" %}
-{% set version = "1.9.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ conda_package_name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/decoupler-{{ version }}.tar.gz
-  sha256: 9b3f75673311635fd30228273f953cc2b3d3886bcebff83abadfc9200951a7f9
+  sha256: 326b4b35ca902e728fa223cb7a4eb75fe3f32d6fa14436bb0e56e33d29f59f80
 
 build:
   noarch: python
@@ -19,15 +19,17 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
-    - scikit-learn
-    - igraph
-    - adjusttext >=1.1.1
-    - pydeseq2 <0.5.0
-    - marsilea >=0.4.5
     - scanpy
+    - docrep
+    - xgboost
+    - requests
+    - marsilea
+    - adjusttext
+    - python-igraph
 
 test:
   imports:
@@ -36,13 +38,12 @@ test:
     - pip check
   requires:
     - pip
-    - poetry
     - python {{ python_min }}
 
 about:
   home: https://github.com/saezlab/decoupler-py
   summary: Ensemble of methods to perform enrichment analysis from omics data
-  license: GPL-3.0-or-later
+  license: BSD-3-Clause
   license_file: LICENSE
 
 extra:
