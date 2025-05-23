@@ -29,7 +29,7 @@ requirements:
     - requests
     - marsilea
     - adjusttext
-    - igraph
+    - python-igraph
 
 test:
   imports:
