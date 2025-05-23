@@ -23,7 +23,6 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - pydeseq2
     - scanpy
 
 test:
