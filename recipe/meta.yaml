@@ -19,6 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - pydeseq2
@@ -36,7 +38,7 @@ test:
 about:
   home: https://github.com/saezlab/decoupler-py
   summary: Ensemble of methods to perform enrichment analysis from omics data
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
 
 extra:
