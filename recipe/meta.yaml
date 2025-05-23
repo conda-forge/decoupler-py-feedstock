@@ -19,14 +19,9 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - poetry
   run:
     - python >={{ python_min }}
-    - scikit-learn
-    - igraph
-    - adjusttext >=1.1.1
-    - pydeseq2 <0.5.0
-    - marsilea >=0.4.5
+    - pydeseq2
     - scanpy
 
 test:
@@ -36,13 +31,12 @@ test:
     - pip check
   requires:
     - pip
-    - poetry
     - python {{ python_min }}
 
 about:
   home: https://github.com/saezlab/decoupler-py
   summary: Ensemble of methods to perform enrichment analysis from omics data
-  license: GPL-3.0-or-later
+  license: BSD 3-Clause
   license_file: LICENSE
 
 extra:
