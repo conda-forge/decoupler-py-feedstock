@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/decoupler-py-fe
 
 Home: https://github.com/saezlab/decoupler-py
 
-Package license: GPL-3.0-or-later
+Package license: BSD-3-Clause
 
 Summary: Ensemble of methods to perform enrichment analysis from omics data
 
