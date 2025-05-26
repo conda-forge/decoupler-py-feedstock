@@ -30,6 +30,7 @@ requirements:
     - marsilea
     - adjusttext
     - python-igraph
+    - ipywidgets
 
 test:
   imports:
