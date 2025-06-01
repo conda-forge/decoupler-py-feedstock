@@ -31,6 +31,7 @@ requirements:
     - adjusttext
     - python-igraph
     - ipywidgets
+    - dcor
 
 test:
   imports:
