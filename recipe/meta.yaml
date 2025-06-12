@@ -43,7 +43,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/saezlab/decoupler-py
+  home: https://github.com/scverse/decoupler
   summary: Ensemble of methods to perform enrichment analysis from omics data
   license: BSD-3-Clause
   license_file: LICENSE
