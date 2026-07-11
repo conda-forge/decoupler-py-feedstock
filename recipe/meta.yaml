@@ -1,6 +1,6 @@
 {% set name = "decoupler" %}
 {% set conda_package_name = "decoupler-py" %}
-{% set version = "2.1.6" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ conda_package_name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/decoupler-{{ version }}.tar.gz
-  sha256: ba51a96373868792777889bbf243a4836b4c6062badc055d32c3b4c213166480
+  sha256: 7e73ee9619b2006e4ab1c33cc465a952598f17c45dd74c6fd5056562c9e03233
 
 build:
   noarch: python
